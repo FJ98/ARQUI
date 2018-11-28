@@ -1,0 +1,24 @@
+module pc(entrada,clock,salida);
+input reg[31:0] entrada;
+input wire clock;
+output reg[31:0] salida;
+reg valido;
+initial begin
+ salida = 0;
+ valido = 0;
+end
+always @(posedge clock)
+begin
+ if(valido == 1)
+ begin
+ salida = entrada;
+ end
+ else if(valido ==0)
+ begin
+ salida = 0;
+ valido = 1;
+ end
+ 
+end
+Endmodule
+

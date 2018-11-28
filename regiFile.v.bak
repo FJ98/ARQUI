@@ -1,0 +1,89 @@
+module register(readReg1,readReg2,writeReg,writeData,RegWrite,clock,readData1,readData2);
+input [4:0] readReg1,readReg2,writeReg;
+input [31:0] writeData;
+input RegWrite,clock;
+output reg [31:0] readData1,readData2;
+
+reg [31:0]registros[0:31];
+
+initial begin
+	registros[0] <= 32'h00000000; //$zero
+	registros[8] <= 32'h00000000; //$t0
+	registros[9] <= 32'h00000000;
+	registros[10] <= 32'h00000000;
+	registros[11] <= 32'h00000000;
+	registros[12] <= 32'h00000000;
+	registros[13] <= 32'h00000000;
+	registros[14] <= 32'h00000000;
+	registros[15] <= 32'h00000000; //$t7
+	registros[16] <= 32'h00000000; //$s0
+	registros[17] <= 32'h00000000;
+	registros[18] <= 32'h00000000;
+	registros[19] <= 32'h00000000;
+	registros[20] <= 32'h00000000;
+	registros[21] <= 32'h00000000;
+	registros[22] <= 32'h00000000;
+	registros[23] <= 32'h00000000; //$s7
+	registros[24] <= 32'h00000000; //$t8
+	registros[25] <= 32'h00000000; //$t9
+	registros[26] <= 32'h00000000;
+	registros[27] <= 32'h00000000;
+	registros[28] <= 32'h00000000;
+	registros[29] <= 32'h00000000;
+	registros[30] <= 32'h00000000;
+	registros[31] <= 32'h00000000;
+	
+end
+
+always@(posedge clock)
+begin
+	$display("POSEDGE Entrada al registro ,RegWrite -> %d",RegWrite);
+	readData2 <= registros[readReg2];
+	readData1 <= registros[readReg1];
+	$display("POSEDGE Salida del registro reg1 ,ReadReg1 -> %d",readReg1);
+	$display("POSEDGE Salida del registro reg1 ,ReadReg2 -> %d",readReg2);
+	$display("registro 8 -> t0 -> %h",registros[8]);
+	$display("registro 9 -> t1 -> %h",registros[9]);
+	$display("registro 10 -> t2 -> %h",registros[10]);
+	$display("registro 11 -> t3 -> %h",registros[11]);
+	$display("registro 12 -> t4 -> %h",registros[12]);
+	$display("registro 13 -> t5 -> %h",registros[13]);
+	$display("registro 14 -> t6 -> %h",registros[14]);
+	$display("registro 15 -> t7 -> %h",registros[15]);
+	$display("registro 16 -> t8 -> %h",registros[16]);
+	$display("registro 17 -> s0 -> %h",registros[17]);
+	$display("registro 18 -> s1 -> %h",registros[18]);
+	$display("registro 19 -> s2 -> %h",registros[19]);
+	$display("registro 20 -> s3 -> %h",registros[20]);
+	$display("registro 21 -> s4 -> %h",registros[21]);
+	$display("registro 22 -> s5 -> %h",registros[22]);
+	$display("registro 23 -> s6 -> %h",registros[23]);
+	$display("registro 24 -> s7 -> %h",registros[24]);
+	$display("registro 25 -> s8 -> %h",registros[25]);
+	$display("registro 26 -> s2 -> %h",registros[26]);
+	$display("registro 27 -> s3 -> %h",registros[27]);
+	$display("registro 28 -> s4 -> %h",registros[28]);
+	$display("registro 29 -> s5 -> %h",registros[29]);
+	$display("registro 30 -> s6 -> %h",registros[30]);
+	$display("registro 31 -> s7 -> %h",registros[31]);
+	$display("\n FINAL \n");
+	
+end
+
+
+always@(negedge clock)
+begin
+	if(RegWrite==1'b1)begin
+	registros[writeReg] <= writeData;
+	end
+	$display("NENEDGE Entrada al registro ,RegWrite -> %b",RegWrite);
+	$display("NENEDGE Entrada al registro ,writeReg -> %d",writeReg);
+	$display("NENEDGE Entrada al registro ,writeData -> %d",writeData);
+	$display("\n INICIO \n");
+	
+	
+end
+
+
+
+endmodule

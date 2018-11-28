@@ -1,0 +1,85 @@
+C:/Modeltech_pe_edu_10.4a/examples/PROCESSOR/and.v {1 {vlog -work PROCESSOR -stats=none C:/Modeltech_pe_edu_10.4a/examples/PROCESSOR/and.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module AND
+
+Top level modules:
+	AND
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/PROCESSOR/regiFile.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/PROCESSOR/regiFile.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module register
+
+Top level modules:
+	register
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/PROCESSOR/shift28.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/PROCESSOR/shift28.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module shift28
+
+Top level modules:
+	shift28
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/PROCESSOR/shiftLeft.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/PROCESSOR/shiftLeft.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module shiftLeft2
+
+Top level modules:
+	shiftLeft2
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/PROCESSOR/add.v {1 {vlog -work PROCESSOR -stats=none C:/Modeltech_pe_edu_10.4a/examples/PROCESSOR/add.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Add
+
+Top level modules:
+	Add
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/PROCESSOR/signExtended.v {1 {vlog -work PROCESSOR -stats=none C:/Modeltech_pe_edu_10.4a/examples/PROCESSOR/signExtended.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module signExtended
+
+Top level modules:
+	signExtended
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/PROCESSOR/nstructMem.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/PROCESSOR/nstructMem.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module instruction_memory
+
+Top level modules:
+	instruction_memory
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/PROCESSOR/pcCount.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/PROCESSOR/pcCount.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module program_counter
+
+Top level modules:
+	program_counter
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/PROCESSOR/aluCont.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/PROCESSOR/aluCont.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ALUCONTROL
+
+Top level modules:
+	ALUCONTROL
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/PROCESSOR/aluU.v {1 {vlog -work PROCESSOR -stats=none C:/Modeltech_pe_edu_10.4a/examples/PROCESSOR/aluU.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/PROCESSOR/dataMem.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/PROCESSOR/dataMem.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module DataMemory
+
+Top level modules:
+	DataMemory
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/PROCESSOR/mux.v {1 {vlog -work work -stats=none C:/Modeltech_pe_edu_10.4a/examples/PROCESSOR/mux.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module mux
+
+Top level modules:
+	mux
+
+} {} {}}

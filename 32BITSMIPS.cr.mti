@@ -1,0 +1,15 @@
+C:/Modeltech_pe_edu_10.4a/examples/PROCESSOR/adder.v {1 {vlog -work PROCESSOR -stats=none {C:\Modeltech_pe_edu_10.4a\examples\PROCESSOR\adder.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Add
+
+Top level modules:
+	Add
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/PROCESSOR/testShift.v {1 {vlog -work PROCESSOR -stats=none {C:\Modeltech_pe_edu_10.4a\examples\PROCESSOR\testShift.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module test_bench_shift
+
+Top level modules:
+	test_bench_shift
+
+} {} {}}
